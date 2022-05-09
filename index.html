@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
 
   <body onScroll="onScroll()">
@@ -74,6 +79,9 @@
             <li><a onclick="closeMenu()" href="#home">Início</a></li>
             <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
             <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li>
+              <a onclick="closeMenu()" href="#testimonials">Depoimentos</a>
+            </li>
           </ul>
 
           <a class="button" onclick="closeMenu()" href="#contact"
@@ -462,6 +470,66 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div class="wrapper">
+        <header>
+          <h4>Depoimentos</h4>
+          <h2>
+            O que os clientes dizem <br />
+            sobre o DoctorCare
+          </h2>
+        </header>
+
+        <div class="content">
+          <div class="testimonials swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&rdquo;</span>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim. Amet minim
+                    mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim.
+                  </p>
+
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/46.jpg"
+                      alt="foto de perfil de um cliente"
+                    />
+                    Wanessa Souza
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&rdquo;</span>
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do amet sint. Velit officia consequat duis enim. Amet minim
+                    mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim.
+                  </p>
+
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/men/36.jpg"
+                      alt="foto de perfil de um cliente"
+                    />
+                    Gabriel Alves
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="wrapper">
         <div class="col-a">
@@ -727,6 +795,9 @@
 
     <!-- ScrollReveal LIB -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script src="./main.js"></script>
   </body>

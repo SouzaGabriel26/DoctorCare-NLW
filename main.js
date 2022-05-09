@@ -6,6 +6,7 @@ function onScroll() {
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(testimonials)
   activateMenuAtCurrentSection(contact)
 }
 
@@ -76,6 +77,21 @@ ScrollReveal({
 #about header,
 #about .content p,
 #about .content img,
+#testimonials,
+#testimonials header,
+#testimonials .content .testimonial,
 #contact,
 #contact header,
 #contact .content`)
+
+// Testimonials Carousel slider swiper
+const swiper = new Swiper('.swiper', {
+  slidesPreview: 2,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  keyboard: true,
+  mousewheel: true,
+  rewind: true
+})
